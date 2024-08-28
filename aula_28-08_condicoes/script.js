@@ -50,3 +50,22 @@ if (idade < 18){
 }else{
     console.log("Maior de Idade");
 }
+
+/*
+Elabore um programa que:
+1. Inicie o saldo da conta zerado.
+2. Solicite um valor a ser depositado.
+2. Solicite um valor a ser sacado.
+4. Apresente se é possivel sacar ou não o valor.
+*/
+
+var saldoZero = 0;
+var deposito = parseFloat(prompt("Digite o valor do deposito:"));
+var saque = parseFloat(prompt("Digite o valor a ser sacado"));
+var saldo = deposito + saldoZero;
+
+if(saque > saldo){
+    console.log("Você não possui essa quantia em sua conta");
+    }else{(saque <= saldo)
+    console.log("Você tem esse valor disponivel para saque");
+}
